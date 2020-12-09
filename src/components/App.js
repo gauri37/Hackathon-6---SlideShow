@@ -1,9 +1,16 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
 import slides from '../data';
+
+
+
 const App = () => {
   const [index, setIndex] = useState(0);
-  
+  //const [text, setText] = useState(slides[0].text);
+  // function newData(){
+  //   if(index<slides.length)
+  //     setIndex(index+1);
+  // }
   return (
     <div>
       <h1 data-testid="title">{slides[index].title}</h1>
@@ -20,3 +27,6 @@ const App = () => {
     </div>
   )
 }
+
+
+export default App;
